@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #222222;
+}
+
+.logo {
+  padding: 10px;
+  height: 100px;
+}
+
+.Main {
+  width: 100%;
+  display: flex;
+  
+  
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+ 
+}
+
+.blubtn {
+  background-color: #2D2D2D;
+  color: #fff;
+  border-color: #0071BC;
+}
+
+.blubtn:hover {
+  background-color: #0071BC;
+  border-color: #0071BC;
+}
+
+input {
+  border-color: #0071BC;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.navbar {
+  border-radius: 0px;
+  border-color: #222222;
+  border-bottom-color: black;
+  border-top-color: black;
+}
+.nav-tabs {
+  border-bottom: 1px solid #0071BC;
+  margin-bottom: 10px;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border-color: #0071BC;
+  background-color: #2D2D2D;
+  color: #fff;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #0071BC;
+}
+
+.form-control {
+  border: 1px solid #0071BC;
+}
+
+.Search {
+  margin-left: -30px;
+  padding-top: 13px;
+  width: 170px;
+  color: #B3B4B3;
+}
+
+.Search>input {
+  border: .5px solid #0071BC;
+  background-color: #2D2D2D;
+  padding-left: 5px;
+}
+
+
+.coin-list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #222222;
+  border: 1px solid black;
+  color: #B3B4B3;
+  border-top-color: #2D2D2D;
+  border-left-color: #2D2D2D;
+  margin-right: 10px;
+}
+
+.coin-item {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  border: 1px solid black;
+  border-bottom-color: #2D2D2D;
+  border-right-color: #2D2D2D;
+  padding: 5px;
+}
+.coin-item-header {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  color: white;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-bottom-color: #2D2D2D;
+  border-right-color: #2D2D2D;
+  padding: 5px;
+}
+
+.coin-name {
+  grid-column: 1;
+  justify-self: start;
+}
+.coin-price {
+  grid-column: 2
+}
+.coin-change {
+  grid-column: 3;
+  justify-self: end;
+}
+.changeUp {
+  grid-column: 3;
+  color: green;
+  justify-self: end;
+}
+
+.changeDown {
+  grid-column: 3;
+  color: red;
+  justify-self: end;
+}
+
+.market-list {
+  grid-column: 1;
+}
+.news-list {
+  text-align: left;
+  margin-left: 10px;
+  width: 60%;
+  
+  border: 1px solid black;
+  border-top-color: #2D2D2D;
+  border-left-color: #2D2D2D;
+  
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 23% 77%;
+  grid-template-rows: 50% 50%;
+  border: 1px solid black;
+  border-bottom-color: #2D2D2D;
+  border-right-color: #2D2D2D;
+  padding: 5px;
+  background-color: #222222;
+}
+
+
+
+.news-item>a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.article-img {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  background: url("images/head-logo.svg");
+  background-color: #0071BC;
+}
+
+.article-img>img {
+  height: 70px;
+  width: 70px;
+  
+}
+
+.article-title {
+  margin: 5px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.article-info {
+  color: #757575;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.article-date {
+  font-size: 10px;
+  margin: 5px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 840px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .main-container {
+    width: 98%;
+  }
+  .coin-list {
+    margin-right: 2.5px;
+  }
+  .news-list {
+    margin-right: 2.5px;
+  }
+}
